@@ -37,6 +37,10 @@ public class DeptController {
     }
 
     /**
+     * 在这里制造一个冲突等待解决
+     */
+
+    /**
      * 通过主键查询单条数据
      *
      * @param id 主键
