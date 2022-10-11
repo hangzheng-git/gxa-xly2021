@@ -1,5 +1,6 @@
 package com.gxa.gxaxly2021.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.gxa.gxaxly2021.dto.LayDTO;
 import com.gxa.gxaxly2021.dto.ResultDTO;
 import com.gxa.gxaxly2021.entity.Dept;
@@ -26,6 +27,14 @@ public class DeptController {
      */
     @Resource
     private DeptService deptService;
+
+    @ResponseBody
+    public String test(){
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("name","张三");
+        jsonObject.put("age","18");
+        return jsonObject.toJSONString();
+    }
 
     /**
      * 通过主键查询单条数据
