@@ -29,7 +29,7 @@ public class DeptController {
     private DeptService deptService;
 
     @ResponseBody
-    public String test(){//123
+    public String test(){//123哈哈哈
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("name","张三");
         jsonObject.put("age","18");
